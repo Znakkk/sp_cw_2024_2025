@@ -1,0 +1,50 @@
+!!Prog3!!
+PROGRAM pR3;
+VAR LONGINT aAA,aA2,bBB,xXX,cC1,cC2;
+BEGIN
+PRINT("Input A: ");
+SCAN(aAA);
+PRINT("Input B: ");
+SCAN(bBB);
+PRINT("FOR TO DO");
+FOR aA2<-aAA TO bBB DO
+BEGIN
+	PRINT("\n");
+	PRINT(aA2 MUL aA2);
+END
+PRINT("\nFOR DOWNTO DO");
+FOR aA2<-bBB DOWNTO aAA DO
+BEGIN
+	PRINT("\n");
+	PRINT(aA2 MUL aA2);
+END
+
+PRINT("\nWHILE A * B: ");
+xXX<-0;
+cC1<-0;
+WHILE(cC1 < aAA) 
+BEGIN
+	cC2<-0;
+	WHILE (cC2 < bBB)
+	BEGIN	
+		xXX<-xXX ADD1;
+		cC2<-cC2 ADD1;
+	END
+cC1<-cC1 ADD1;	
+END
+PRINT(xXX);
+
+PRINT("\nREPEAT UNTIL A * B: ");
+xXX<-0;
+cC1<-1;
+REPEAT
+  cC2<-1;
+  REPEAT
+    xXX<-xXX ADD1;
+    cC2<-cC2 ADD1;
+  UNTIL(NOT(cC2 > bBB))
+  cC1<-cC1 ADD1;
+UNTIL(NOT(cC1 > aAA))
+PRINT(xXX);
+
+END

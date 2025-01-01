@@ -1,0 +1,148 @@
+================================================================================
+|  #  |  SYMBOL  |      TYPE      |                VALUE                | LINE |
+|=====|==========|================|=====================================|======|
+|  1  |  PROGRAM |        Program |                             PROGRAM |    2 |
+|  2  |          |    ProgramName |                                 pR1 |    2 |
+|  3  |        ; |      Semicolon |                                   ; |    2 |
+|  4  |      VAR |           Vars |                                 VAR |    3 |
+|  5  |  LONGINT |        VarType |                             LONGINT |    3 |
+|  6  |          |     Identifier |                                 aAA |    3 |
+|  7  |        , |          Comma |                                   , |    3 |
+|  8  |          |     Identifier |                                 bBB |    3 |
+|  9  |        , |          Comma |                                   , |    3 |
+|  10 |          |     Identifier |                                 xXX |    3 |
+|  11 |        , |          Comma |                                   , |    3 |
+|  12 |          |     Identifier |                                 yYY |    3 |
+|  13 |        ; |      Semicolon |                                   ; |    3 |
+|  14 |    BEGIN |          Start |                               BEGIN |    4 |
+|  15 |    PRINT |          Write |                               PRINT |    5 |
+|  16 |        ( |        LBraket |                                   ( |    5 |
+|  17 |          |         String |                           Input A:  |    5 |
+|  18 |        ) |        RBraket |                                   ) |    5 |
+|  19 |        ; |      Semicolon |                                   ; |    5 |
+|  20 |     SCAN |           Read |                                SCAN |    6 |
+|  21 |        ( |        LBraket |                                   ( |    6 |
+|  22 |          |     Identifier |                                 aAA |    6 |
+|  23 |        ) |        RBraket |                                   ) |    6 |
+|  24 |        ; |      Semicolon |                                   ; |    6 |
+|  25 |    PRINT |          Write |                               PRINT |    7 |
+|  26 |        ( |        LBraket |                                   ( |    7 |
+|  27 |          |         String |                           Input B:  |    7 |
+|  28 |        ) |        RBraket |                                   ) |    7 |
+|  29 |        ; |      Semicolon |                                   ; |    7 |
+|  30 |     SCAN |           Read |                                SCAN |    8 |
+|  31 |        ( |        LBraket |                                   ( |    8 |
+|  32 |          |     Identifier |                                 bBB |    8 |
+|  33 |        ) |        RBraket |                                   ) |    8 |
+|  34 |        ; |      Semicolon |                                   ; |    8 |
+|  35 |    PRINT |          Write |                               PRINT |    9 |
+|  36 |        ( |        LBraket |                                   ( |    9 |
+|  37 |          |         String |                             A + B:  |    9 |
+|  38 |        ) |        RBraket |                                   ) |    9 |
+|  39 |        ; |      Semicolon |                                   ; |    9 |
+|  40 |    PRINT |          Write |                               PRINT |   10 |
+|  41 |        ( |        LBraket |                                   ( |   10 |
+|  42 |          |     Identifier |                                 aAA |   10 |
+|  43 |      ADD |       Addition |                                 ADD |   10 |
+|  44 |          |     Identifier |                                 bBB |   10 |
+|  45 |        ) |        RBraket |                                   ) |   10 |
+|  46 |        ; |      Semicolon |                                   ; |   10 |
+|  47 |    PRINT |          Write |                               PRINT |   11 |
+|  48 |        ( |        LBraket |                                   ( |   11 |
+|  49 |          |         String |                           \nA - B:  |   11 |
+|  50 |        ) |        RBraket |                                   ) |   11 |
+|  51 |        ; |      Semicolon |                                   ; |   11 |
+|  52 |    PRINT |          Write |                               PRINT |   12 |
+|  53 |        ( |        LBraket |                                   ( |   12 |
+|  54 |          |     Identifier |                                 aAA |   12 |
+|  55 |      SUB |    Subtraction |                                 SUB |   12 |
+|  56 |          |     Identifier |                                 bBB |   12 |
+|  57 |        ) |        RBraket |                                   ) |   12 |
+|  58 |        ; |      Semicolon |                                   ; |   12 |
+|  59 |    PRINT |          Write |                               PRINT |   13 |
+|  60 |        ( |        LBraket |                                   ( |   13 |
+|  61 |          |         String |                           \nA * B:  |   13 |
+|  62 |        ) |        RBraket |                                   ) |   13 |
+|  63 |        ; |      Semicolon |                                   ; |   13 |
+|  64 |    PRINT |          Write |                               PRINT |   14 |
+|  65 |        ( |        LBraket |                                   ( |   14 |
+|  66 |          |     Identifier |                                 aAA |   14 |
+|  67 |      MUL | Multiplication |                                 MUL |   14 |
+|  68 |          |     Identifier |                                 bBB |   14 |
+|  69 |        ) |        RBraket |                                   ) |   14 |
+|  70 |        ; |      Semicolon |                                   ; |   14 |
+|  71 |    PRINT |          Write |                               PRINT |   15 |
+|  72 |        ( |        LBraket |                                   ( |   15 |
+|  73 |          |         String |                           \nA / B:  |   15 |
+|  74 |        ) |        RBraket |                                   ) |   15 |
+|  75 |        ; |      Semicolon |                                   ; |   15 |
+|  76 |    PRINT |          Write |                               PRINT |   16 |
+|  77 |        ( |        LBraket |                                   ( |   16 |
+|  78 |          |     Identifier |                                 aAA |   16 |
+|  79 |      DIV |       Division |                                 DIV |   16 |
+|  80 |          |     Identifier |                                 bBB |   16 |
+|  81 |        ) |        RBraket |                                   ) |   16 |
+|  82 |        ; |      Semicolon |                                   ; |   16 |
+|  83 |    PRINT |          Write |                               PRINT |   17 |
+|  84 |        ( |        LBraket |                                   ( |   17 |
+|  85 |          |         String |                           \nA % B:  |   17 |
+|  86 |        ) |        RBraket |                                   ) |   17 |
+|  87 |        ; |      Semicolon |                                   ; |   17 |
+|  88 |    PRINT |          Write |                               PRINT |   18 |
+|  89 |        ( |        LBraket |                                   ( |   18 |
+|  90 |          |     Identifier |                                 aAA |   18 |
+|  91 |      MOD |            Mod |                                 MOD |   18 |
+|  92 |          |     Identifier |                                 bBB |   18 |
+|  93 |        ) |        RBraket |                                   ) |   18 |
+|  94 |        ; |      Semicolon |                                   ; |   18 |
+|  95 |          |     Identifier |                                 xXX |   19 |
+|  96 |       <- |     Assignment |                                  <- |   19 |
+|  97 |        ( |        LBraket |                                   ( |   19 |
+|  98 |          |     Identifier |                                 aAA |   19 |
+|  99 |      SUB |    Subtraction |                                 SUB |   19 |
+| 100 |          |     Identifier |                                 bBB |   19 |
+| 101 |        ) |        RBraket |                                   ) |   19 |
+| 102 |      MUL | Multiplication |                                 MUL |   19 |
+| 103 |          |         Number |                                  10 |   19 |
+| 104 |      ADD |       Addition |                                 ADD |   19 |
+| 105 |        ( |        LBraket |                                   ( |   19 |
+| 106 |          |     Identifier |                                 aAA |   19 |
+| 107 |      ADD |       Addition |                                 ADD |   19 |
+| 108 |          |     Identifier |                                 bBB |   19 |
+| 109 |        ) |        RBraket |                                   ) |   19 |
+| 110 |      DIV |       Division |                                 DIV |   19 |
+| 111 |          |         Number |                                  10 |   19 |
+| 112 |        ; |      Semicolon |                                   ; |   19 |
+| 113 |          |     Identifier |                                 yYY |   20 |
+| 114 |       <- |     Assignment |                                  <- |   20 |
+| 115 |          |     Identifier |                                 xXX |   20 |
+| 116 |      ADD |       Addition |                                 ADD |   20 |
+| 117 |        ( |        LBraket |                                   ( |   20 |
+| 118 |          |     Identifier |                                 xXX |   20 |
+| 119 |      MOD |            Mod |                                 MOD |   20 |
+| 120 |          |         Number |                                  10 |   20 |
+| 121 |        ) |        RBraket |                                   ) |   20 |
+| 122 |        ; |      Semicolon |                                   ; |   20 |
+| 123 |    PRINT |          Write |                               PRINT |   21 |
+| 124 |        ( |        LBraket |                                   ( |   21 |
+| 125 |          |         String | \nX = (A - B) * 10 + (A + B) / 10\n |   21 |
+| 126 |        ) |        RBraket |                                   ) |   21 |
+| 127 |        ; |      Semicolon |                                   ; |   21 |
+| 128 |    PRINT |          Write |                               PRINT |   22 |
+| 129 |        ( |        LBraket |                                   ( |   22 |
+| 130 |          |     Identifier |                                 xXX |   22 |
+| 131 |        ) |        RBraket |                                   ) |   22 |
+| 132 |        ; |      Semicolon |                                   ; |   22 |
+| 133 |    PRINT |          Write |                               PRINT |   23 |
+| 134 |        ( |        LBraket |                                   ( |   23 |
+| 135 |          |         String |                \nY = X + (X % 10)\n |   23 |
+| 136 |        ) |        RBraket |                                   ) |   23 |
+| 137 |        ; |      Semicolon |                                   ; |   23 |
+| 138 |    PRINT |          Write |                               PRINT |   24 |
+| 139 |        ( |        LBraket |                                   ( |   24 |
+| 140 |          |     Identifier |                                 yYY |   24 |
+| 141 |        ) |        RBraket |                                   ) |   24 |
+| 142 |        ; |      Semicolon |                                   ; |   24 |
+| 143 |      END |            End |                                 END |   25 |
+| 144 |          |      EndOfFile |                                     |   -1 |
+================================================================================

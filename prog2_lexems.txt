@@ -1,0 +1,240 @@
+==================================================
+|  #  |  SYMBOL  |    TYPE    |   VALUE   | LINE |
+|=====|==========|============|===========|======|
+|  1  |       !! |   LComment |        !! |    1 |
+|  2  |          |    Comment |     Prog2 |    1 |
+|  3  |       !! |   RComment |        !! |    1 |
+|  4  |  PROGRAM |    Program |   PROGRAM |    2 |
+|  5  |          | Identifier |       pR2 |    2 |
+|  6  |        ; |  Semicolon |         ; |    2 |
+|  7  |      VAR |       Vars |       VAR |    3 |
+|  8  |  LONGINT |    VarType |   LONGINT |    3 |
+|  9  |          | Identifier |       aAA |    3 |
+|  10 |        , |      Comma |         , |    3 |
+|  11 |          | Identifier |       bBB |    3 |
+|  12 |        , |      Comma |         , |    3 |
+|  13 |          | Identifier |       cCC |    3 |
+|  14 |        ; |  Semicolon |         ; |    3 |
+|  15 |    BEGIN |      Start |     BEGIN |    4 |
+|  16 |    PRINT |      Write |     PRINT |    5 |
+|  17 |        ( |    LBraket |         ( |    5 |
+|  18 |        " |     Quotes |         " |    5 |
+|  19 |          |     String | Input A:  |    5 |
+|  20 |        " |     Quotes |         " |    5 |
+|  21 |        ) |    RBraket |         ) |    5 |
+|  22 |        ; |  Semicolon |         ; |    5 |
+|  23 |     SCAN |       Read |      SCAN |    6 |
+|  24 |        ( |    LBraket |         ( |    6 |
+|  25 |          | Identifier |       aAA |    6 |
+|  26 |        ) |    RBraket |         ) |    6 |
+|  27 |        ; |  Semicolon |         ; |    6 |
+|  28 |    PRINT |      Write |     PRINT |    7 |
+|  29 |        ( |    LBraket |         ( |    7 |
+|  30 |        " |     Quotes |         " |    7 |
+|  31 |          |     String | Input B:  |    7 |
+|  32 |        " |     Quotes |         " |    7 |
+|  33 |        ) |    RBraket |         ) |    7 |
+|  34 |        ; |  Semicolon |         ; |    7 |
+|  35 |     SCAN |       Read |      SCAN |    8 |
+|  36 |        ( |    LBraket |         ( |    8 |
+|  37 |          | Identifier |       bBB |    8 |
+|  38 |        ) |    RBraket |         ) |    8 |
+|  39 |        ; |  Semicolon |         ; |    8 |
+|  40 |    PRINT |      Write |     PRINT |    9 |
+|  41 |        ( |    LBraket |         ( |    9 |
+|  42 |        " |     Quotes |         " |    9 |
+|  43 |          |     String | Input C:  |    9 |
+|  44 |        " |     Quotes |         " |    9 |
+|  45 |        ) |    RBraket |         ) |    9 |
+|  46 |        ; |  Semicolon |         ; |    9 |
+|  47 |     SCAN |       Read |      SCAN |   10 |
+|  48 |        ( |    LBraket |         ( |   10 |
+|  49 |          | Identifier |       cCC |   10 |
+|  50 |        ) |    RBraket |         ) |   10 |
+|  51 |        ; |  Semicolon |         ; |   10 |
+|  52 |       IF |         If |        IF |   11 |
+|  53 |        ( |    LBraket |         ( |   11 |
+|  54 |          | Identifier |       aAA |   11 |
+|  55 |        > |     Greate |         > |   11 |
+|  56 |          | Identifier |       bBB |   11 |
+|  57 |        ) |    RBraket |         ) |   11 |
+|  58 |    BEGIN |      Start |     BEGIN |   12 |
+|  59 |       IF |         If |        IF |   13 |
+|  60 |        ( |    LBraket |         ( |   13 |
+|  61 |          | Identifier |       aAA |   13 |
+|  62 |        > |     Greate |         > |   13 |
+|  63 |          | Identifier |       cCC |   13 |
+|  64 |        ) |    RBraket |         ) |   13 |
+|  65 |    BEGIN |      Start |     BEGIN |   14 |
+|  66 |     GOTO |       Goto |      GOTO |   15 |
+|  67 |          | Identifier |       tMP |   15 |
+|  68 |        ; |  Semicolon |         ; |   15 |
+|  69 |      END |        End |       END |   16 |
+|  70 |     ELSE |       Else |      ELSE |   17 |
+|  71 |    BEGIN |      Start |     BEGIN |   18 |
+|  72 |    PRINT |      Write |     PRINT |   19 |
+|  73 |        ( |    LBraket |         ( |   19 |
+|  74 |          | Identifier |       cCC |   19 |
+|  75 |        ) |    RBraket |         ) |   19 |
+|  76 |        ; |  Semicolon |         ; |   19 |
+|  77 |     GOTO |       Goto |      GOTO |   20 |
+|  78 |          | Identifier |       oUT |   20 |
+|  79 |        ; |  Semicolon |         ; |   20 |
+|  80 |          | Identifier |       tMP |   21 |
+|  81 |        : |      Colon |         : |   21 |
+|  82 |    PRINT |      Write |     PRINT |   22 |
+|  83 |        ( |    LBraket |         ( |   22 |
+|  84 |          | Identifier |       aAA |   22 |
+|  85 |        ) |    RBraket |         ) |   22 |
+|  86 |        ; |  Semicolon |         ; |   22 |
+|  87 |     GOTO |       Goto |      GOTO |   23 |
+|  88 |          | Identifier |       oUT |   23 |
+|  89 |        ; |  Semicolon |         ; |   23 |
+|  90 |      END |        End |       END |   24 |
+|  91 |      END |        End |       END |   25 |
+|  92 |       IF |         If |        IF |   26 |
+|  93 |        ( |    LBraket |         ( |   26 |
+|  94 |          | Identifier |       bBB |   26 |
+|  95 |        < |       Less |         < |   26 |
+|  96 |          | Identifier |       cCC |   26 |
+|  97 |        ) |    RBraket |         ) |   26 |
+|  98 |    BEGIN |      Start |     BEGIN |   27 |
+|  99 |    PRINT |      Write |     PRINT |   28 |
+| 100 |        ( |    LBraket |         ( |   28 |
+| 101 |          | Identifier |       cCC |   28 |
+| 102 |        ) |    RBraket |         ) |   28 |
+| 103 |        ; |  Semicolon |         ; |   28 |
+| 104 |      END |        End |       END |   29 |
+| 105 |     ELSE |       Else |      ELSE |   30 |
+| 106 |    BEGIN |      Start |     BEGIN |   31 |
+| 107 |    PRINT |      Write |     PRINT |   32 |
+| 108 |        ( |    LBraket |         ( |   32 |
+| 109 |          | Identifier |       bBB |   32 |
+| 110 |        ) |    RBraket |         ) |   32 |
+| 111 |        ; |  Semicolon |         ; |   32 |
+| 112 |      END |        End |       END |   33 |
+| 113 |          | Identifier |       oUT |   34 |
+| 114 |        : |      Colon |         : |   34 |
+| 115 |    PRINT |      Write |     PRINT |   35 |
+| 116 |        ( |    LBraket |         ( |   35 |
+| 117 |        " |     Quotes |         " |   35 |
+| 118 |          |     String |        \n |   35 |
+| 119 |        " |     Quotes |         " |   35 |
+| 120 |        ) |    RBraket |         ) |   35 |
+| 121 |        ; |  Semicolon |         ; |   35 |
+| 122 |       IF |         If |        IF |   36 |
+| 123 |        ( |    LBraket |         ( |   36 |
+| 124 |        ( |    LBraket |         ( |   36 |
+| 125 |          | Identifier |       aAA |   36 |
+| 126 |       EQ |      Equal |        EQ |   36 |
+| 127 |          | Identifier |       bBB |   36 |
+| 128 |        ) |    RBraket |         ) |   36 |
+| 129 |      AND |        And |       AND |   36 |
+| 130 |        ( |    LBraket |         ( |   36 |
+| 131 |          | Identifier |       aAA |   36 |
+| 132 |       EQ |      Equal |        EQ |   36 |
+| 133 |          | Identifier |       cCC |   36 |
+| 134 |        ) |    RBraket |         ) |   36 |
+| 135 |      AND |        And |       AND |   36 |
+| 136 |        ( |    LBraket |         ( |   36 |
+| 137 |          | Identifier |       bBB |   36 |
+| 138 |       EQ |      Equal |        EQ |   36 |
+| 139 |          | Identifier |       cCC |   36 |
+| 140 |        ) |    RBraket |         ) |   36 |
+| 141 |        ) |    RBraket |         ) |   36 |
+| 142 |    BEGIN |      Start |     BEGIN |   37 |
+| 143 |    PRINT |      Write |     PRINT |   38 |
+| 144 |        ( |    LBraket |         ( |   38 |
+| 145 |          |     Number |         1 |   38 |
+| 146 |        ) |    RBraket |         ) |   38 |
+| 147 |        ; |  Semicolon |         ; |   38 |
+| 148 |      END |        End |       END |   39 |
+| 149 |     ELSE |       Else |      ELSE |   40 |
+| 150 |    BEGIN |      Start |     BEGIN |   41 |
+| 151 |    PRINT |      Write |     PRINT |   42 |
+| 152 |        ( |    LBraket |         ( |   42 |
+| 153 |          |     Number |         0 |   42 |
+| 154 |        ) |    RBraket |         ) |   42 |
+| 155 |        ; |  Semicolon |         ; |   42 |
+| 156 |      END |        End |       END |   43 |
+| 157 |    PRINT |      Write |     PRINT |   44 |
+| 158 |        ( |    LBraket |         ( |   44 |
+| 159 |        " |     Quotes |         " |   44 |
+| 160 |          |     String |        \n |   44 |
+| 161 |        " |     Quotes |         " |   44 |
+| 162 |        ) |    RBraket |         ) |   44 |
+| 163 |        ; |  Semicolon |         ; |   44 |
+| 164 |       IF |         If |        IF |   45 |
+| 165 |        ( |    LBraket |         ( |   45 |
+| 166 |        ( |    LBraket |         ( |   45 |
+| 167 |          | Identifier |       aAA |   45 |
+| 168 |        < |       Less |         < |   45 |
+| 169 |          |     Number |         0 |   45 |
+| 170 |        ) |    RBraket |         ) |   45 |
+| 171 |       OR |         Or |        OR |   45 |
+| 172 |        ( |    LBraket |         ( |   45 |
+| 173 |          | Identifier |       bBB |   45 |
+| 174 |        < |       Less |         < |   45 |
+| 175 |          |     Number |         0 |   45 |
+| 176 |        ) |    RBraket |         ) |   45 |
+| 177 |       OR |         Or |        OR |   45 |
+| 178 |        ( |    LBraket |         ( |   45 |
+| 179 |          | Identifier |       cCC |   45 |
+| 180 |        < |       Less |         < |   45 |
+| 181 |          |     Number |         0 |   45 |
+| 182 |        ) |    RBraket |         ) |   45 |
+| 183 |        ) |    RBraket |         ) |   45 |
+| 184 |    BEGIN |      Start |     BEGIN |   46 |
+| 185 |    PRINT |      Write |     PRINT |   47 |
+| 186 |        ( |    LBraket |         ( |   47 |
+| 187 |        - |      Minus |         - |   47 |
+| 188 |          |     Number |         1 |   47 |
+| 189 |        ) |    RBraket |         ) |   47 |
+| 190 |        ; |  Semicolon |         ; |   47 |
+| 191 |      END |        End |       END |   48 |
+| 192 |     ELSE |       Else |      ELSE |   49 |
+| 193 |    BEGIN |      Start |     BEGIN |   50 |
+| 194 |    PRINT |      Write |     PRINT |   51 |
+| 195 |        ( |    LBraket |         ( |   51 |
+| 196 |          |     Number |         0 |   51 |
+| 197 |        ) |    RBraket |         ) |   51 |
+| 198 |        ; |  Semicolon |         ; |   51 |
+| 199 |      END |        End |       END |   52 |
+| 200 |    PRINT |      Write |     PRINT |   53 |
+| 201 |        ( |    LBraket |         ( |   53 |
+| 202 |        " |     Quotes |         " |   53 |
+| 203 |          |     String |        \n |   53 |
+| 204 |        " |     Quotes |         " |   53 |
+| 205 |        ) |    RBraket |         ) |   53 |
+| 206 |        ; |  Semicolon |         ; |   53 |
+| 207 |       IF |         If |        IF |   54 |
+| 208 |        ( |    LBraket |         ( |   54 |
+| 209 |      NOT |        Not |       NOT |   54 |
+| 210 |        ( |    LBraket |         ( |   54 |
+| 211 |          | Identifier |       aAA |   54 |
+| 212 |        < |       Less |         < |   54 |
+| 213 |        ( |    LBraket |         ( |   54 |
+| 214 |          | Identifier |       bBB |   54 |
+| 215 |      ADD |   Addition |       ADD |   54 |
+| 216 |          | Identifier |       cCC |   54 |
+| 217 |        ) |    RBraket |         ) |   54 |
+| 218 |        ) |    RBraket |         ) |   54 |
+| 219 |        ) |    RBraket |         ) |   54 |
+| 220 |    BEGIN |      Start |     BEGIN |   55 |
+| 221 |    PRINT |      Write |     PRINT |   56 |
+| 222 |        ( |    LBraket |         ( |   56 |
+| 223 |          |     Number |        10 |   56 |
+| 224 |        ) |    RBraket |         ) |   56 |
+| 225 |        ; |  Semicolon |         ; |   56 |
+| 226 |      END |        End |       END |   57 |
+| 227 |     ELSE |       Else |      ELSE |   58 |
+| 228 |    BEGIN |      Start |     BEGIN |   59 |
+| 229 |    PRINT |      Write |     PRINT |   60 |
+| 230 |        ( |    LBraket |         ( |   60 |
+| 231 |          |     Number |         0 |   60 |
+| 232 |        ) |    RBraket |         ) |   60 |
+| 233 |        ; |  Semicolon |         ; |   60 |
+| 234 |      END |        End |       END |   61 |
+| 235 |      END |        End |       END |   62 |
+| 236 |          |  EndOfFile |           |   -1 |
+==================================================

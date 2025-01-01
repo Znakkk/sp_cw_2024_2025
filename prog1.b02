@@ -1,0 +1,25 @@
+!!Prog1!!
+PROGRAM pR1;
+VAR LONGINT aAA,bBB,xXX,yYY;
+BEGIN
+PRINT("Input A: ");
+SCAN(aAA);
+PRINT("Input B: ");
+SCAN(bBB);
+PRINT("A + B: ");
+PRINT(aAA ADD bBB);
+PRINT("\nA - B: ");
+PRINT(aAA SUB bBB);
+PRINT("\nA * B: ");
+PRINT(aAA MUL bBB);
+PRINT("\nA / B: ");
+PRINT(aAA DIV bBB);
+PRINT("\nA % B: ");
+PRINT(aAA MOD bBB);
+xXX<-(aAA SUB bBB) MUL 10 ADD (aAA ADD bBB) DIV 10;
+yYY<-xXX ADD (xXX MOD 10);
+PRINT("\nX = (A - B) * 10 + (A + B) / 10\n");
+PRINT(xXX);
+PRINT("\nY = X + (X % 10)\n");
+PRINT(yYY);
+END

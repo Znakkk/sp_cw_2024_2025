@@ -1,0 +1,62 @@
+!!Prog2!!
+PROGRAM pR2;
+VAR LONGINT aAA,bBB,cCC;
+BEGIN
+PRINT("Input A: ");
+SCAN(aAA);
+PRINT("Input B: ");
+SCAN(bBB);
+PRINT("Input C: ");
+SCAN(cCC);
+IF(aAA > bBB)
+BEGIN
+	IF(aAA > cCC)
+	BEGIN
+		GOTO tMP;		
+	END	
+	ELSE
+	BEGIN
+		PRINT(cCC);
+		GOTO oUT;
+		tMP:		
+		PRINT(aAA);
+		GOTO oUT;
+	END
+END	
+	IF(bBB < cCC)
+	BEGIN
+		PRINT(cCC);
+	END	
+	ELSE
+	BEGIN
+		PRINT(bBB);
+	END
+oUT:	
+PRINT("\n");
+IF((aAA EQ bBB) AND (aAA EQ cCC) AND (bBB EQ cCC))
+BEGIN
+	PRINT(1);
+END	
+ELSE
+BEGIN
+	PRINT(0);
+END
+PRINT("\n");
+IF((aAA < 0) OR (bBB < 0) OR (cCC < 0))
+BEGIN
+	PRINT(- 1);
+END	
+ELSE
+BEGIN
+	PRINT(0);
+END
+PRINT("\n");
+IF(NOT(aAA < (bBB ADD cCC)))
+BEGIN
+	PRINT(10);
+END	
+ELSE
+BEGIN
+	PRINT(0);
+END
+END
